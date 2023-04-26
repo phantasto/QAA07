@@ -18,7 +18,7 @@ Feature: skalnik.pl
         And Type your data for receipt
         Then I choose shipping method
         And I choose destination 
-        And I choose from payment methods
+        And I choose payment method
         When I press `Przejdź do platności`
         Then I am waiting for response from Bank API
         And I see message after successful purchase
